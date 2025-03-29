@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.html">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Research Form</h1>
+    <form action="">
+        
+        <fieldset id="genset">
+            <legend >general Information</legend>
+            <label for="">FirstName: <input type="text" id="firstname" name="firstname" required></label>
+            <label for="">LastName: <input type="text" id="lastname"  name="lastname" required></label>
+            <label for="">Phone: <input type="text" id="phone1" maxlength="3" name="phoneFirstPart" required> - <input type="text" id="phone2" maxlength="3" name="phoneSecondPart" required> - <input type="text" id="phone3" name="phoneThirdPart" maxlength="4">  </label>
+            <label for="">Email: <input type="email" id="email" name="email" required></label>
+
+        </fieldset>
+
+        <fieldset id="studydataset">
+            <legend>Research Study Data</legend>
+
+            <fieldset id="ageset">
+                <legend>Age/Height/Weight</legend>
+                <label for="">Age: <input type="number" id="age" min="1" max="125" name="age" required></label>
+                <label for="">Height: <input type="number" id="heightfeet" name="heightfeet" min="2" max="7" required>Feet <input name="heightInches" type="number" id="heightinc" min="0" max="11">Inches</label>
+                <label for="">Weight: <input name="weight" type="number" id="weight" min="1" max="600" required>Pounds</label>
+
+            </fieldset>
+
+            <fieldset id="condset">
+                <legend>Conditions</legend>
+                <p>which of the following Conditions are present in your family? (check all that apply)</p>
+                <label for=""><input type="checkbox" id="chk-hbp">High blood pressure </label>
+                <label for=""><input type="checkbox" id="chk-diabetes"> Diabetes</label>
+                <label for=""><input type="checkbox" id="chk-glaucoma">Glaucoma</label>
+                <label for=""><input type="checkbox" id="chk-asthma">Asthma</label>
+                <label for=""><input type="checkbox" id="chk-none">None</label>
+            </fieldset>
+
+            <fieldset id="timeset">
+                <legend>Time Period</legend>
+                <p>how long have you experienced any of the above conditions?</p>
+                <label for=""><input type="radio" id="rd-never" name="timeperiod">never</label>
+                <label for=""><input type="radio" id="rd-less1" name="timeperiod">Less than 1 year</label>
+                <label for=""><input type="radio" id="rd-2" name="timeperiod">one to two years</label>
+                <label for=""><input type="radio" id="rd-more2" name="timeperiod">more than two years</label>
+            </fieldset>
+
+            <fieldset id="studyinfoset">
+                <legend>Study information</legend>
+
+                which of study are you taking part of? drop down list of studies 
+                <select name="" id="study">
+                    <option value="">Long term</option>
+                    <option value="">Short term</option>
+                </select>
+
+                <label for="">Assigned study id <input type="text" maxlength="5" id="studyid1"> -  <input type="text" maxlength="5" id="studyid2"></label>
+            </fieldset>
+
+            <fieldset id="addinfoset">
+                <legend>Additional information (Comments)</legend>
+                <textarea name="" id="comments" cols="30" rows="10"></textarea>
+            </fieldset>
+
+
+        </fieldset>
+
+        <fieldset>
+            <button type="reset">Clear Form</button>
+            <button type="submit"> Submit form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
